@@ -1,18 +1,64 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Seeking Interaction</title>
+		<script src = "http://d3js.org/d3.v3.min.js"></script>
+		<style type="text/css">
+		body{
+			margin:0;
+			font-family:verdana;
+			font-size:12px;
+			}
+			svg{
+				display:block;
+				margin-left:10%;
+			}
+		svg.population:hover{
+			border:double;
+			border-width:7px;
+			border-color:red;
+			fill:grey;
+			opacity:0.5;
+		}
+		svg.native:hover{
+			border:double;
+			border-width:7px;
+			border-color:purple;			
+			fill:grey;
+			opacity:0.5;
+		}		
+		svg.income:hover{
+			border:double;
+			border-width:7px;
+			border-color:green;			
+			fill:grey;			
+			opacity:0.5;
+		}	
+	</style>
 	</head>
 	<body>
-	<svg width = "1200" height = "1000">
-	<rect x = "200" y = "600" width = "800" height = "150" rx = "20" ry = "20" style = "fill:red; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+	<svg width = "1000" height = "900" style = "background-color:lightpink;" class = "population">
+	<a xlink:href="https://www.theguardian.com/environment/interactive/2013/may/14/alaska-villages-frontline-global-warming" target="population">
+	<text x = "500" y = "50"> Hi! </text>
+	
+	<image xlink:href = "POPULATION.png" alt = "population graph" x = "50"  width = "900px" height = "900px"></image>
+	<g>
+	<rect x = "50" y = "700" width = "900" height = "150" rx = "20" ry = "20" style = "fill:red; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+	</g>
 	</svg>
-	<svg width = "1200" height = "1000">
-	<rect x = "200" y = "600" width = "800" height = "150" rx = "20" ry = "20" style = "fill:purple; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+	<svg width = "1000" height = "900" style = "background-color:lavender;" class = "native">
+	<a xlink:href="https://www.theguardian.com/environment/interactive/2013/may/14/alaska-villages-frontline-global-warming" target="native">
+	<image xlink:href = "NATIVE.png" alt = "native graph" x = "50" width = "900px" height = "900px"></image>	
+	<g>
+	<rect x = "50" y = "700" width = "900" height = "150" rx = "20" ry = "20" style = "fill:purple; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+	</g>
 	</svg>
-	<svg width = "1200" height = "1000">
-	<rect x = "200" y = "600" width = "800" height = "150" rx = "20" ry = "20" style = "fill:green; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+	<svg width = "1000" height = "900" style = "background-color:darkseagreen;" class = "income">
+	<a xlink:href="https://www.theguardian.com/environment/interactive/2013/may/14/alaska-villages-frontline-global-warming" target="income">
+	<image xlink:href = "INCOME.png" alt = "income graph" x = "50" width = "900px" height = "900px"></image>
+	<g>
+	<rect x = "50" y = "700" width = "900" height = "150" rx = "20" ry = "20" style = "fill:green; stroke-width:5; stroke:rgb(0,0,0); opacity: 0.5" />
+	</g>
 	</svg>		
 	</body>
 </html>
